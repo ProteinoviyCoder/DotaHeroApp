@@ -2,7 +2,7 @@
   <header class="header">
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item" @click="$router.push('/')">
+        <li class="nav-item" @click="$router.push('/DotaHeroApp')">
           <img
             @mouseover="animScale"
             class="img-dota"

@@ -2,7 +2,7 @@
   <div class="card">
     <div class="content-card">
       <img
-        @click="$router.push(`/hero/${hero.id}`)"
+        @click="$router.push(`/DotaHeroApp/hero/${hero.id}`)"
         class="img-hero"
         :src="hero.img"
         alt="Герой в гримёрке -:)"
@@ -20,7 +20,9 @@
       </p>
       <progress class="prog" :value="hero.percentWin" max="100"></progress>
       <div class="buttons">
-        <MyButton @click="$router.push(`/hero/${hero.id}`)">Подробнее</MyButton>
+        <MyButton @click="$router.push(`/DotaHeroApp/hero/${hero.id}`)"
+          >Подробнее</MyButton
+        >
       </div>
     </div>
   </div>

@@ -3,8 +3,8 @@ import Main from "@/Pages/Main";
 import HeroPage from "@/Pages/HeroPage";
 
 const routes = [
-  { path: "/", component: Main },
-  { path: "/hero/:id", component: HeroPage },
+  { path: "/DotaHeroApp", component: Main },
+  { path: "/DotaHeroApp/hero/:id", component: HeroPage },
 ];
 
 const router = createRouter({
