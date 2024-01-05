@@ -23,9 +23,17 @@
         none: !flagMouse,
       }"
     >
-      <li class="side-nav-item" @click="$router.push('/')">Все герои</li>
+      <li class="side-nav-item" @click="$router.push('/DotaHeroApp')">
+        Все герои
+      </li>
       <hr class="hr" />
     </ul>
+    <div
+      class="back-panel"
+      @mouseover.stop="closeSideBar"
+      @click.stop="closeSideBar"
+      v-if="flagMouse"
+    ></div>
   </div>
 </template>
 
@@ -70,6 +78,7 @@ export default {
 }
 
 .side-bar-active {
+  z-index: 100;
   width: 200px;
   background-color: #2d384a;
 
@@ -125,6 +134,16 @@ export default {
   margin: 0;
   padding: 0;
   width: 100%;
+}
+
+.back-panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 200px;
+  background-color: transparent;
+  z-index: -1;
 }
 
 .none {
